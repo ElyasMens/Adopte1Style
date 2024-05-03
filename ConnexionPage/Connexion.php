@@ -11,7 +11,7 @@ session_destroy();
         <link rel="stylesheet" href="Connexion.css">
     </head>
     <body>
-        <form action="verifconnexion.php" method="post">
+        <form action="verifConnexion.php" method="post">
             <div><label for="identifier">Pseudo</label><input name="identifier"></div>
                 <div><label for="password">Mot de passe</label><input name="password"></div>
                     <input class="submit" type="submit">           
