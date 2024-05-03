@@ -10,12 +10,12 @@ function Reveal() {
         if (button.innerText === "CONNEXION"){
             button.innerText = "INSCRIPTION";
             title.textContent = "CONNEXION";
-            form.action = "/ConnexionPage/Connexion.php";
+            form.action = "../SignUpConnexionFolder/ConnexionPage/VerifyConnexion.php";
             postButton.value = "Connexion";
         }else{
             button.innerText = "CONNEXION";
             title.textContent = "INSCRIPTION";
-            form.action = "/SignUpPage/SignUp.php.php";
+            form.action = "../SignUpConnexionFolder/SignUpPage/SignUp.php";
             form.method = "post";
             postButton.value = "S'inscrire";
         }   
