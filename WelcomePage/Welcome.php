@@ -22,8 +22,8 @@
             <form action="/ConnexionPage/Connexion.php" method="post" id="Connexion">
                 <div class="TitleForm"><p>CONNEXION</p></div>
                 <div class="ConnexionForm">
-                    <label for="Email">EMAIL</label>
-                    <input name="Email" placeholder="Email">
+                    <label for="Pseudo">PSEUDO</label>
+                    <input name="Pseudo" placeholder="Pseudo">
                     <label for="Password">MOT DE PASSE</label>
                     <input name="Password" placeholder="Mot de passe">
                     <div class="Option">
@@ -37,8 +37,8 @@
             <form action="/SignUpPage/SignUp.php" method="post" id="Connexion">
                 <div class="TitleForm"><p>S'INSCRIRE</p></div>
                 <div class="ConnexionForm">
-                    <label for="Email">EMAIL</label>
-                    <input name="Email" placeholder="Email">
+                    <label for="pseudo">PSEUDO</label>
+                    <input name="Pseudo" placeholder="Pseudo">
                     <label for="Password">MOT DE PASSE</label>
                     <input name="Password" placeholder="Mot de passe">
                     <input type="submit" value="S'inscrire">
@@ -68,17 +68,15 @@
 
     <!--Footer-->
     <div class="Footer">
-        <div class="col1-lg1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dapibus orci quis ornare. Fusce neque elit, malesuada non nisl et, molestie pretium nunc. Donec nec imperdiet diam. Aenean ultrices dui elit, a imperdiet justo iaculis eu. Fusce laoreet congue enim, ut tincidunt massa scelerisque ac. Donec magna sem, rhoncus et felis id, consequat volutpat eros. Curabitur a tempor ligula. Integer malesuada, velit sit amet vehicula tempor, diam justo egestas eros, ac lacinia quam odio eu diam. Cras sodales enim felis, vitae gravida lacus porta eget. Etiam consectetur eget neque at auctor. </p>
-        </div>
-        <div class="col2-lg1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dapibus orci quis ornare. Fusce neque elit, malesuada non nisl et, molestie pretium nunc. Donec nec imperdiet diam. Aenean ultrices dui elit, a imperdiet justo iaculis eu. Fusce laoreet congue enim, ut tincidunt massa scelerisque ac. Donec magna sem, rhoncus et felis id, consequat volutpat eros. Curabitur a tempor ligula. Integer malesuada, velit sit amet vehicula tempor, diam justo egestas eros, ac lacinia quam odio eu diam. Cras sodales enim felis, vitae gravida lacus porta eget. Etiam consectetur eget neque at auctor. </p>
-        </div>
+        <div classem
         <div class="col3-lg1">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dapibus orci quis ornare. Fusce neque elit, malesuada non nisl et, molestie pretium nunc. Donec nec imperdiet diam. Aenean ultrices dui elit, a imperdiet justo iaculis eu. Fusce laoreet congue enim, ut tincidunt massa scelerisque ac. Donec magna sem, rhoncus et felis id, consequat volutpat eros. Curabitur a tempor ligula. Integer malesuada, velit sit amet vehicula tempor, diam justo egestas eros, ac lacinia quam odio eu diam. Cras sodales enim felis, vitae gravida lacus porta eget. Etiam consectetur eget neque at auctor. </p>
         </div>
     </div>
     </body>
 </html>
+
+
+em
 
 
