@@ -1,0 +1,23 @@
+.Header  {
+    top:0%;
+    right: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(95, 32, 32);
+    color:white;
+    padding: 30px;
+} 
+
+.Header a {
+    color: white;
+    text-decoration: none;
+}
+
+.Header a:hover {
+    color: grey;
+}
+
+html {
+    background-color: grey;
+}
