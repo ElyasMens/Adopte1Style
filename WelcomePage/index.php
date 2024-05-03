@@ -3,8 +3,8 @@
     <head>
         <title>Adopte1Style</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="Welcome.css">
-        <script src="Welcome.js"></script>
+        <link rel="stylesheet" href="../Assets/CSS/Welcome.css">
+        <script src="../Assets/JavaScript/Welcome.js"></script>
     </head>
     <body>
 
@@ -23,9 +23,9 @@
                 <div class="TitleForm"><p>Connexion</p></div>
                 <div class="ConnexionForm">
                     <label for="identifier">NOM D'UTILISATEUR</label>
-                    <input name="identifier" placeholder="Pseudo">
+                    <input name="identifier" placeholder="Nom d'utilisateur">
                     <label for="password">MOT DE PASSE</label>
-                    <input name="password" placeholder="Mot de passe">
+                    <input name="password" placeholder="Mot de passe" autocomplete="new-password" minlength="6">
                     <div class="Option">
                         <input type="checkbox" name="Memorise" id="Memorise"><label for="Memorise" id="Memorise">Mémoriser</label>
                         <a href="#">Mot de passe oublié</a>
