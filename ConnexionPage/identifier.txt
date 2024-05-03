@@ -1,0 +1,5 @@
+ostrean;bonnet;admin
+matthieu;brault;admin
+rayane;manseur;admin
+elyas;mensah;admin
+di;maria;utilisateur
