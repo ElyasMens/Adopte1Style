@@ -1,3 +1,8 @@
+<?php
+session_start();
+echo $_SESSION['error'];
+session_destroy();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,9 +11,9 @@
         <link rel="stylesheet" href="Connexion.css">
     </head>
     <body>
-        <form action="Session.php" method="post">
-            <div><label for="Pseudo">Pseudo</label><input name="Pseudo"></div>
-                <div><label for="Mdp">Mot de passe</label><input name="Mdp"></div>
+        <form action="verifconnexion.php" method="post">
+            <div><label for="identifier">Pseudo</label><input name="identifier"></div>
+                <div><label for="password">Mot de passe</label><input name="password"></div>
                     <input class="submit" type="submit">           
         </form>
     </body>
