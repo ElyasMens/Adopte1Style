@@ -20,18 +20,26 @@ function signUp($pseudo, $password) {
     return "Inscription réussie !";
 }
 
-// Vérifie si le formulaire a été soumis
+// Vérifier si le formulaire d'inscription a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les valeurs saisies par l'utilisateur depuis le formulaire
     $pseudo = $_POST['identifier'];
     $password = $_POST['password'];
 
-    // Appeler la fonction signUp avec les informations récupérées depuis le formulaire
+    // Appeler la fonction signUp() avec les informations récupérées depuis le formulaire
     $resultat = signUp($pseudo, $password);
 
-    // Afficher le résultat de l'inscription
-    echo $resultat;
+    // Vérifier si l'inscription a été réussie
+    if ($resultat === "Inscription réussie !") {
+        // Rediriger l'utilisateur vers la page de création de profil
+        header("Location: Profile.php");
+        exit; // Assurez-vous de terminer le script après la redirection
+    } else {
+        // Afficher un message d'erreur si l'inscription a échoué
+        echo $resultat;
+    }
 } else {
+    // Afficher un message d'erreur si le formulaire n'a pas été soumis
     echo "Erreur : Le formulaire n'a pas été soumis.";
 }
 ?>
