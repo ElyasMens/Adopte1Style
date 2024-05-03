@@ -35,6 +35,7 @@ $cpt++;
 
 
 if($erreur === $cpt){
+    header('Location: http://localhost:8080/WelcomePage/Index.php');
     $_SESSION['error'] = 'Login ou mot de passe incorrect';
 }
 elseif($utilisateur === 1){
