@@ -3,8 +3,8 @@
     <head>
         <title>Adopte1Style</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../Assets/CSS/Index">
-        <script src="../Assets/JavaScript/Index"></script>
+        <link rel="stylesheet" href="../Assets/CSS/Index.css">
+        <script src="../Assets/JavaScript/Index.js"></script>
     </head>
     <body>
 
