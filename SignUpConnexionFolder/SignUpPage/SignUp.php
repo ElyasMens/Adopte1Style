@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Vérifier si l'inscription a été réussie
     if ($resultat === "Inscription réussie !") {
         // Rediriger l'utilisateur vers la page de création de profil
-        header("Location: Profile.php");
-        exit; // Assurez-vous de terminer le script après la redirection
+        header("Location: http://localhost:8080/Profile/Profile.php");
+        exit;
     } else {
         // Afficher un message d'erreur si l'inscription a échoué
         echo $resultat;
