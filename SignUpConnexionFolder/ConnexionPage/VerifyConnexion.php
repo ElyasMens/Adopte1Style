@@ -6,10 +6,10 @@ $abonné = 0;
 $cpt = 0;
 $erreur = 0;
 
-$username = $_POST['identifier'];
+$username = $_POST['username'];
 $password = $_POST['password'];
 
-$file = fopen("../identifier.txt","r");
+$file = fopen("../user.txt","r");
 
 while(!feof($file)){
 $line = fgets($file);
@@ -39,7 +39,7 @@ if($erreur === $cpt){
     $_SESSION['error'] = 'Login ou mot de passe incorrect';
 }
 elseif($utilisateur === 1){
-    header('Location: page_user.php');
+    header('Location: http://localhost:8080/WelcomePage/page_user.php');
 }
 elseif($abonné === 1){
     header('Location: page_abonné.php');
