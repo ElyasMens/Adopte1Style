@@ -1,6 +1,6 @@
 <?php
 function signUp($pseudo, $password) {
-    $file_users = '../identifier.txt';
+    $file_users = '../user.txt';
 
     // Vérifie si le pseudo existe déjà dans le fichier des utilisateurs
     $users = file($file_users, FILE_IGNORE_NEW_LINES);
@@ -23,7 +23,7 @@ function signUp($pseudo, $password) {
 // Vérifier si le formulaire d'inscription a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les valeurs saisies par l'utilisateur depuis le formulaire
-    $pseudo = $_POST['identifier'];
+    $pseudo = $_POST['username'];
     $password = $_POST['password'];
 
     // Appeler la fonction signUp() avec les informations récupérées depuis le formulaire
