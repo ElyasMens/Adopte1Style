@@ -21,8 +21,8 @@
                 <form action="" method="post" id="Connexion">
                     <div class="TitleForm"><p>CONNEXION</p></div>
                     <div class="ConnexionForm">
-                        <label for="identifier">NOM D'UTILISATEUR</label>
-                        <input name="identifier" placeholder="Nom d'utilisateur">
+                        <label for="username">NOM D'UTILISATEUR</label>
+                        <input name="username" placeholder="Nom d'utilisateur">
                         <label for="password">MOT DE PASSE</label>
                         <input name="password" placeholder="Mot de passe" autocomplete="new-password" minlength="6">
                         <div class="Option">
