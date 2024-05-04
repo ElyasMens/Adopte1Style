@@ -3,22 +3,24 @@
     session_opened();
     $_SESSION['connected']='guest';
     //}
-?>
+?>   
+<?php require '../Includes/Elements/Header.php';?>
+<!DOCTYPE html>
     <head>
         <title>Adopte1Style</title>
         <link rel="stylesheet" href="../Assets/CSS/Index.css">
     </head>
-    <!--Header-->
-    <?php require '../Includes/Elements/Header.php';?>
-    <body>
     <!----------> 
-    <div class="Container">
-        <div class="content-c1-l1">   
-        <?php require '../Includes/SessionStatus.php'?>
-        </div>
+    <body>
+        <div class="Container">
+            <div class="content-c1-l1">   
+                <?php require '../Includes/SessionStatus.php'?>
+            </div>
             <div class="Hidden" id="ConnexionDiv">
                 <form action="../SignUpLoginFolder/Login/LoginForm.php" method="post" id="Connexion">
-                    <div class="TitleForm"><p>CONNEXION</p></div>
+                    <div class="TitleForm">
+                        <p>CONNEXION</p>
+                    </div>
                     <div class="ConnexionForm">
                         <label for="username">NOM D'UTILISATEUR</label>
                         <input name="username" placeholder="Nom d'utilisateur">
@@ -35,7 +37,8 @@
                             <script>error();</script>
                         <?php endif; ?>
                     </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
         <!--Footer-->
