@@ -1,24 +1,23 @@
-<!DOCTYPE html>
-<html>
+<?php
+    require '../Includes/Auth.php';
+    session_opened();
+    $_SESSION['connected']='guest';
+    //}
+?>
     <head>
         <title>Adopte1Style</title>
-        <meta charset="UTF-8">
         <link rel="stylesheet" href="../Assets/CSS/Index.css">
-        <script src="../Assets/JavaScript/Index.js"></script>
     </head>
+    <!--Header-->
+    <?php require '../Includes/Elements/Header.php';?>
     <body>
-        <!--Header-->
-        <div class="Header">
-            <button onclick="Reveal()" id="InscriptionConnexion">
-                CONNEXION
-            </button>
-        </div>     
-        <div class="Container">
-            <div class="content-c1-l1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dapibus orci quis ornare. Fusce neque elit, malesuada non nisl et, molestie pretium nunc. Donec nec imperdiet diam. Aenean ultrices dui elit, a imperdiet justo iaculis eu. Fusce laoreet congue enim, ut tincidunt massa scelerisque ac. Donec magna sem, rhoncus et felis id, consequat volutpat eros. Curabitur a tempor ligula. Integer malesuada, velit sit amet vehicula tempor, diam justo egestas eros, ac lacinia quam odio eu diam. Cras sodales enim felis, vitae gravida lacus porta eget. Etiam consectetur eget neque at auctor. </p>
-            </div>
+    <!----------> 
+    <div class="Container">
+        <div class="content-c1-l1">   
+        <?php require '../Includes/SessionStatus.php'?>
+        </div>
             <div class="Hidden" id="ConnexionDiv">
-                <form action="" method="post" id="Connexion">
+                <form action="../SignUpLoginFolder/Login/LoginForm.php" method="post" id="Connexion">
                     <div class="TitleForm"><p>CONNEXION</p></div>
                     <div class="ConnexionForm">
                         <label for="username">NOM D'UTILISATEUR</label>
@@ -28,29 +27,18 @@
                         <div class="Option">
                             <input type="checkbox" name="Memorise" id="Memorise"><label for="Memorise" id="Memorise">Mémoriser</label>
                             <a href="#">Mot de passe oublié</a>
+                        </div>                        
+                        <div>
+                            <input type="submit" value="Connexion" id="postButton">
                         </div>
-                        <div><input type="submit" value="Connexion" id="postButton"></div>
+                        <?php if($error): ?>
+                            <script>error();</script>
+                        <?php endif; ?>
                     </div>
                 </form>
             </div>
-                <div class="content-c1-l2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dapibus orci quis ornare. Fusce neque elit, malesuada non nisl et, molestie pretium nunc. Donec nec imperdiet diam. Aenean ultrices dui elit, a imperdiet justo iaculis eu. Fusce laoreet congue enim, ut tincidunt massa scelerisque ac. Donec magna sem, rhoncus et felis id, consequat volutpat eros. Curabitur a tempor ligula. Integer malesuada, velit sit amet vehicula tempor, diam justo egestas eros, ac lacinia quam odio eu diam. Cras sodales enim felis, vitae gravida lacus porta eget. Etiam consectetur eget neque at auctor. </p>
-                </div>
-                <div class="content-c2-l2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dapibus orci quis ornare. Fusce neque elit, malesuada non nisl et, molestie pretium nunc. Donec nec imperdiet diam. Aenean ultrices dui elit, a imperdiet justo iaculis eu. Fusce laoreet congue enim, ut tincidunt massa scelerisque ac. Donec magna sem, rhoncus et felis id, consequat volutpat eros. Curabitur a tempor ligula. Integer malesuada, velit sit amet vehicula tempor, diam justo egestas eros, ac lacinia quam odio eu diam. Cras sodales enim felis, vitae gravida lacus porta eget. Etiam consectetur eget neque at auctor. </p>
-                </div>
-        
         </div>
         <!--Footer-->
-        <footer>
-                <div class="col1-lg1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div><div class="col2-lg1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="col3-lg1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-        </footer>
+        <?php require '../Includes/Elements/Footer.php';?>
     </body>
 </html>
