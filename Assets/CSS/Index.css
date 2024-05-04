@@ -1,4 +1,6 @@
-
+*{
+    color:white;
+}
 body {
     background-image: url(../Images/BackgroundFashion.jpg);
     background-repeat: no-repeat;
