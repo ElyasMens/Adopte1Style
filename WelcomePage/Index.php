@@ -31,6 +31,7 @@
                         </div>
                         <div><input type="submit" value="Connexion" id="postButton"></div>
                     </div>
+                </form>
             </div>
                 <div class="content-c1-l2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dapibus orci quis ornare. Fusce neque elit, malesuada non nisl et, molestie pretium nunc. Donec nec imperdiet diam. Aenean ultrices dui elit, a imperdiet justo iaculis eu. Fusce laoreet congue enim, ut tincidunt massa scelerisque ac. Donec magna sem, rhoncus et felis id, consequat volutpat eros. Curabitur a tempor ligula. Integer malesuada, velit sit amet vehicula tempor, diam justo egestas eros, ac lacinia quam odio eu diam. Cras sodales enim felis, vitae gravida lacus porta eget. Etiam consectetur eget neque at auctor. </p>
