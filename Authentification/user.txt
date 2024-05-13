@@ -1,0 +1,13 @@
+ostrean;bonnet;admin
+matthieu;brault;admin
+rayane;manseur;admin
+elyas;mensah;admin
+di;maria;user
+lottin;jpense pas;user
+mobu;tu;user
+DiMaria;CookieLover;user
+zdadza;dzadzadza;user
+zdadzadza;dzadzadaz;user
+dzda;dzadzadzdadza;user
+Dembele;11minutos;user
+Mobutu;ABCDEFG;user
