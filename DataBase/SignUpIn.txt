@@ -1,0 +1,11 @@
+ostrean;bonnet;admin
+matthieu;brault;admin
+rayane;manseur;admin
+elyas;mensah;admin
+di;maria;user
+mobu;tu;user
+DiMaria;CookieLover;user
+Dembele;11minutos;user
+Mobutu;ABCDEFG;user
+
+Mounir;CamilGaci;user
