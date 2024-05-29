@@ -66,6 +66,29 @@ function Set_a_Cookie(redirection, user_selected) {
 
 
 
-function searc
+function searchUsers() {
+    var searchName = document.getElementById('search').value;
+    
+    // Sélectionner tous les utilisateurs
+    var users = document.querySelectorAll('.user-info');
+   
+    // Parcourir tous les utilisateurs
+    users.forEach(function(user) {
+        var userName = user.dataset.username;
+        // Flitrage
+        if (searchName == userName) {
+            // Retire la classe 'hide-user' 
+            user.classList.remove('hide-user');
+            user.classList.add('show-user');
+        } else {
+            // Ajoute la classe 'hide-user'
+            user.classList.add('hide-user');
+            user.classList.remove('show-user');
+        }
+    });
+}
+
+
+
 
 
