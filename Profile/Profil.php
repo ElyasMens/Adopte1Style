@@ -6,6 +6,23 @@
     }
     if (isset($_COOKIE['user_selected'])){
         $username = $_COOKIE['user_selected'];
+        $monnomamoi = $_SESSION['username'];
+        //Pour la vue du profile
+        $connexion = Connexion();
+        $query = "SELECT * FROM profile_view WHERE user_visited = :user_visited and user_visitor = :user_visitor";
+        $stmt = $connexion->prepare($query);
+        $stmt->bindValue(':user_visited', $username, PDO::PARAM_STR);
+        $stmt->bindValue(':user_visitor', $monnomamoi, PDO::PARAM_STR);
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        if($result===false){
+            $query = "INSERT INTO profile_view (user_visited,user_visitor) VALUES (:user_visited, :user_visitor)";
+            $stmt = $connexion->prepare($query);
+            $stmt->bindValue(':user_visited', $username, PDO::PARAM_STR);
+            $stmt->bindValue(':user_visitor', $monnomamoi, PDO::PARAM_STR);
+            $stmt->execute();
+        }
+        /*-----------------*/
         setcookie('user_selected', "", time() - 3600, "/");
     }else {
         $username = $_SESSION['username'];
