@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fafafa; 
+    overflow-y:hidden ;
+}
+
+.sidebar {
+    position: fixed;
+    top:0;left:0;
+    height: 100vh;
+    width:85px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(190, 190, 190);
+    padding: 25px 20px;
+    overflow-x: hidden;
+    transition: all 0.4s ease;
+    z-index: 3;
+}
+
+.sidebar:hover {
+    width: 280px;
+}
+
+.sidebar-header h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: black;
+    margin-left: 23px;
+}
+
+.sidebar-header img {
+    width: 42px;
+    
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-links {
+   list-style: none;
+   margin-top: 20px;
+   height: 80%;
+   overflow-y: auto;
+   scrollbar-width: none;
+}
+
+.sidebar-links li {
+    width: 200px;
+}
+
+.sidebar-links li a {
+    display:flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.8);
+    gap:0 20px;
+    font-weight: 500;
+    padding: 15px 10px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar-links li a:hover {
+    background:#d2d2d2 ;
+    color: rgba(0, 0, 0);
+    border-radius: 10px;
+}
+
+.user-account {
+    margin-top: auto;
+    padding: 12px 10px;
+    margin-left: -10px;
+}
+
+.user-account, .user-profile{
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.user-detail {
+    margin-left: 23px;
+    white-space: nowrap;
+}
+
+.user-profile img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.user-profile h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.user-profile span {
+    font-size: 0.775rem;
+    font-weight: 600;
+}

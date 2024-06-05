@@ -1,0 +1,47 @@
+*{  
+    color: rgb(61, 65, 71);
+    border: none;
+    font-size:22px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+
+body {
+    width: 100%;    
+}
+
+/*Header*/
+.Header  {
+    position:fixed;
+    background-color: rgba(210, 210, 210, 0.6);
+    color:white;
+    padding: 10px ;
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+} 
+
+.Header h2 {
+    margin-right: 40px;
+    margin-left: 60px;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: black;
+}
+
+/*------------------------*/
+
+/*--Page Content--*/
+.main-container {
+
+    position: fixed;
+    bottom: 0; right:0; top:85; left: 85;
+    z-index: 1;
+    
+}
