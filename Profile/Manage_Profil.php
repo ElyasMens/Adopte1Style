@@ -93,7 +93,7 @@ function SavePhotoProfile($username, $photos) {
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_SESSION['user']; 
+    $username = $_SESSION['username']; 
     if (!isset($username)) {
         echo "Erreur : Utilisateur non authentifié.";
         exit();
