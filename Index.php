@@ -6,6 +6,7 @@
     }
 
     //Pour le message d'erreur
+$erreur = NULL;
     if(isset($_COOKIE['ERROR_MESSAGE_LOGIN'])){
         $erreur = $_COOKIE['ERROR_MESSAGE_LOGIN'];
     }
