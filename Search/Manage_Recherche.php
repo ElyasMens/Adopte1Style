@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE){
 /*-------- RECHERCHE --------*/
 function Show_LastUsers(){
     $connexion = Connexion();
-    $actual_user = isset($_SESSION['user']) ? $_SESSION['user'] : "";
+    $actual_user = isset($_SESSION['username']) ? $_SESSION['username'] : "";
     
     // 20 derniers utilisateurs inscrits
     $query = "SELECT * FROM users_info WHERE username != :actual_user ORDER BY id DESC LIMIT 20";
