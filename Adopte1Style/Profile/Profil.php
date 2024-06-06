@@ -68,7 +68,7 @@
                         <h2>Style de Vie</h2>
                         <div class="profile-info"><span>Relation</span> <span><?=htmlentities($userInfo['relation']);?></span></div>
                         <div class="profile-info"><span>Travail</span> <span><?=htmlentities($userInfo['job']);?></span></div>
-                        <div class="profile-info"><span>Fumeur</span> <span><?=htmlentities($userInfo['smoking']);?></span></div>
+                        <div class="profile-info"><span>Style vestimentaire</span> <span><?=htmlentities($userInfo['style']);?></span></div>
                         
                         <h2>Caractéristiques Physiques</h2>
                         <div class="profile-info"><span>Taille</span> <span><?=htmlentities($userInfo['user_size']);?> cm</span></div>
