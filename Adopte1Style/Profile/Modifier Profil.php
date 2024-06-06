@@ -65,10 +65,14 @@
                 <label for="biographie">Biographie :</label>
                 <textarea id="biographie" name="biographie" required></textarea><br><br>
         
-                <label for="fumeur">Fumeur:</label>
-                <select id="fumeur" name="fumeur">
-                    <option value="oui">Oui</option>
-                    <option value="non">Non</option>
+                <label for="style">Style vestimentaire:</label>
+                <select id="style" name="style">
+                    <option value="Classique">Classique</option>
+                    <option value="Sapologie">Sapologie</option>
+                    <option value="Chic">Chic</option>
+                    <option value="Casual">Casual</option>
+                    <option value="Streetwear">Streetwear</option>
+                    <option value="Autre">Autre</option>
                 </select><br><br>
                 
                 <label for="photos">Photos:</label>
