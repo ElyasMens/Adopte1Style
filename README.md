@@ -19,6 +19,3 @@ Le programme est compatible avec les dernières versions de **Kali linux**, **Wi
 Sur kali linux, afin d'utiliser le programme, veuillez ouvrir un terminal dans le dossier <code>Adopte1Style-MAIN/</code> </br> Assurez-vous d'être à la racine du dosser <code>Adopte1Style-MAIN/</code></br>
 Exécuter la commande <code>php -S localhost:8080</code> puis rendez vous dans un navigateur et écrivez l'url suivant: <code>http://localhost:8080/Index.php</code> </br>
 
-  
-## Règles
-* [...]
